@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/rock.css">
+    <title>Rock, Paper, Scisssors</title>
+</head>
+<body>
+    <main>
+        <h1>Rock Paper Scissors Game!</h1>
+        <details class="rule_container">
+            <summary>Game Rules</summary>
+            <p>You must choose one of the three options: Rock, Paper, or Scissors.</p>
+            <p>Keep in mind that you are playing against the computer, which randomly selects one of the three options.</p>
+            <h4>The goal is to choose the option that beats the option the computer selects. The game is played in a series of rounds, where each round results in one of the following outcomes:</h4>
+            <ul>
+                <li>Win</li>
+                <li>Lose</li>
+                <li>Tie</li>
+            </ul>
+            <h4>Here are the rules to get a point from the game</h4>
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beats Paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+            <p>If the player and computer choose the same option (Ex. Paper and Paper), you Tie. Hence, then no one gets the point.</p>
+        </details>
+        <div class="score_container">
+            <p><strong>Player Score: </strong><span class="score" id="player_score">0</span></p>
+            <p><strong>Computer Score: </strong><span class="score" id="computer_score">0</span></p>
+        </div>
+        <div class="options_container" id="options_container">
+            <h3>Choose any option below</h3>
+            <div class="options_btn_container">
+                <button class="btn" id="rock_btn" data-text="Rock">
+                    <img src="./assets/imgs/rock.png" id="rock_img" alt="Rock">
+                </button>
+                <button class="btn" id="paper_btn" data-text="Paper">
+                    <img src="./assets/imgs/paper-bin.png" id="paper_img" alt="Paper">
+                </button>
+                <button class="btn" id="scissors_btn" data-text="Scissors">
+                    <img src="./assets/imgs/scissorss.png" id="scissors_img" alt="Scissors">
+                </button>
+            </div>
+        </div>
+
+        <div class="results_container" id="results_container">
+            <p id="results"></p>
+            <p id="winner"></p>
+            <button id="reset_game_btn" class="reset hidden">Play Again?</button>
+        </div>
+    </main>
+    <script src="./assets/rock.js"></script>
+</body>
+</html>
